@@ -1,12 +1,16 @@
 .wandContainer {
   aspect-ratio: 2/3;
   width: 100%;
-  background-color: green;
   cursor: pointer;
+  border: 2px solid #aea87100;
 }
 
 .wandContainer:hover {
-  filter: brightness(1.2);
+  border: 2px solid #aea871;
+}
+
+.wandContainer img {
+  display: block;
 }
 
 .wandGrid {

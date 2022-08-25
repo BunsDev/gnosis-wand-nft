@@ -6,6 +6,7 @@ import { useContractRead } from "wagmi";
 import WandView from "../../components/WandView";
 import Layout from "../../components/Layout";
 import styles from "../../styles/Home.module.css";
+import IconButton from "../../components/IconButton";
 
 import wandContract from "../../utils/contract";
 
@@ -36,6 +37,10 @@ const WandsPage: NextPage = () => {
     <Layout description="Zodiac Wands Minting App">
       <div className={styles.centerContainer}>
         {data && <WandView tokenUri={data} />}
+      </div>
+      <div className={styles.downloadButtons}>
+        <IconButton icon="FullDownload" />
+        <IconButton icon="PfpDownload" />
       </div>
     </Layout>
   );
